@@ -20,9 +20,9 @@ The goal is to develop a deeper understanding of how XSS vulnerabilities work, h
 
 | Directory | Description |
 |---|---|
-| `DOM-Based-XSS/` | DOM XSS concepts and practical lab writeups |
-| `Reflected-XSS/` | Reflected XSS concepts and practical lab writeups |
-| `Stored-XSS/` | Stored XSS concepts and practical lab writeups |
+| `DOM XSS/` | DOM XSS concepts and practical lab writeups |
+| `Reflected XSS/` | Reflected XSS concepts and practical lab writeups |
+| `Stored XSS/` | Stored XSS concepts and practical lab writeups |
 
 Additional vulnerability categories will be added as I progress through the Web Security Academy.
 
