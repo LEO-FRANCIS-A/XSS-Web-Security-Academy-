@@ -1,0 +1,1 @@
+<leo id="x" tabindex="1" onfocus="alert(document.cookie)">
