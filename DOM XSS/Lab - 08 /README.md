@@ -1,4 +1,4 @@
-# Lab 01: Stored DOM XSS
+# Lab 08: Stored DOM XSS
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Practitioner-orange) ![Status](https://img.shields.io/badge/Status-Solved-brightgreen) ![Vulnerability](https://img.shields.io/badge/Vulnerability-Stored%20DOM%20XSS-red)
 
