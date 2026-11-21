@@ -46,7 +46,7 @@ However, the vulnerability can still be exploited by terminating the surrounding
 
 The screenshot below shows the JavaScript code responsible for handling the search query and writing the tracking image into the document.
 
-![JavaScript Source](screenshots/Screenshot_21-Nov_23-45-40_14514.png)
+![JavaScript Source](screenshots/vuln1.png)
 
 ## 3. Exploitation Technique
 
@@ -99,7 +99,7 @@ This is why escaping single quotes and backslashes inside a JavaScript string do
 
 The screenshot below shows the lab successfully solved. The reflected search query contains the injected closing script tag and image element.
 
-![Lab Solved](screenshots/Screenshot_21-Nov_23-47-07_20344.png)
+![Lab Solved](screenshots/successful-payload.png)
 
 ### 5.2 Identifying the JavaScript Context
 
@@ -107,7 +107,7 @@ The HTTP response reveals the JavaScript code where the search query is reflecte
 
 Notice that the user-controlled value is placed inside the `searchTerms` string.
 
-![JavaScript Context](screenshots/Screenshot_21-Nov_23-45-40_14514.png)
+![JavaScript Context](screenshots/vuln1.png)
 
 ## 6. Key Concepts Learned
 
