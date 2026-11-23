@@ -54,7 +54,7 @@ However, the application does not properly handle additional backslashes supplie
 
 The screenshot below shows the reflected JavaScript code and how the application handles the search query.
 
-![JavaScript Source](screenshots/Screenshot_23-Nov_18-00-05_13715.png)
+![JavaScript Source](screenshots/vuln3.png)
 
 ## 3. Exploitation Technique: Backslash Neutralization
 
@@ -120,7 +120,7 @@ This allows the attacker to terminate the original string and execute JavaScript
 
 The screenshot below shows the successful completion of the lab after executing the injected JavaScript expression.
 
-![Lab Solved](screenshots/Screenshot_23-Nov_18-00-24_15885.png)
+![Lab Solved](screenshots/payload2.png)
 
 ### 5.2 Identifying the JavaScript Context
 
@@ -128,7 +128,7 @@ The HTTP response reveals the reflected JavaScript code.
 
 Notice the two consecutive backslashes before the single quote in the resulting JavaScript source. This demonstrates how the additional backslash neutralizes the application's escaping mechanism.
 
-![JavaScript Context](screenshots/Screenshot_23-Nov_18-00-05_13715.png)
+![JavaScript Context](screenshots/vuln3.png)
 
 ## 6. Key Concepts Learned
 
