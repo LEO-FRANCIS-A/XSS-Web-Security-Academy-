@@ -42,7 +42,7 @@ Instead, the vulnerability can be exploited by terminating the existing JavaScri
 
 The screenshot below shows how the application assigns the reflected search query to the `searchTerms` variable.
 
-![JavaScript Source](screenshots/Screenshot_23-Nov_18-15-09_22148.png)
+![JavaScript Source](screenshots/vuln2.png)
 
 ## 3. Exploitation Technique
 
@@ -109,7 +109,7 @@ The application prevents HTML element injection through angle-bracket encoding, 
 
 The screenshot below shows the successful completion of the lab after executing the injected JavaScript expression.
 
-![Lab Solved](screenshots/Screenshot_23-Nov_18-15-16_6214.png)
+![Lab Solved](screenshots/payload.png)
 
 ### 5.2 Identifying the JavaScript Context
 
@@ -117,7 +117,7 @@ The HTTP response reveals the JavaScript code where the search query is reflecte
 
 Notice that the `searchTerms` variable uses a single-quoted string, which creates the injection context.
 
-![JavaScript Context](screenshots/Screenshot_23-Nov_18-15-09_22148.png)
+![JavaScript Context](screenshots/vuln2.png)
 
 ## 6. Key Concepts Learned
 
