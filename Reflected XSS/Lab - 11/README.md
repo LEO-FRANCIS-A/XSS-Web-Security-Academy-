@@ -71,7 +71,7 @@ That was the important realization:
 
 The following screenshot shows the original `Back to Blog` anchor and its JavaScript URL.
 
-![Original JavaScript URL](screenshots/Screenshot_24-Nov_19-35-43_18329.png)
+![Original JavaScript URL](screenshots/og-backtoblog.png)
 
 ## 3. Understanding the Existing JavaScript
 
@@ -167,7 +167,7 @@ Uncaught 1337
 
 ### Screenshot: Successful JavaScript Execution
 
-![Alert Showing Uncaught 1337](screenshots/Screenshot_24-Nov_19-37-02_15368.png)
+![Alert Showing Uncaught 1337](screenshots/success.png)
 
 ## 5. Understanding Arrow Functions
 
@@ -320,7 +320,7 @@ The encoding allows the payload to be placed inside the existing request-body st
 
 The following screenshot shows the final reflected anchor element containing the crafted payload.
 
-![Final Injected JavaScript URL](screenshots/Screenshot_24-Nov_19-36-41_30809.png)
+![Final Injected JavaScript URL](screenshots/final-payload.png)
 
 ## 8. Testing and Refining the Payload
 
@@ -334,7 +334,7 @@ This helped identify the restrictions and understand where the original string c
 
 ### Intermediate Attempt
 
-![Intermediate Payload Attempt](screenshots/Screenshot_24-Nov_19-36-06_13519.png)
+![Intermediate Payload Attempt](med-payload.png)
 
 The intermediate testing helped establish the following:
 
