@@ -389,7 +389,19 @@ The underlying security issue is the use of untrusted data in an executable Java
 - JavaScript's built-in language features can be combined to create execution paths that are not immediately obvious.
 - Applications should avoid constructing executable JavaScript URLs using untrusted input.
 
-## 12. Conclusion
+## 12. Handwritten Notes and Detailed Investigation
+
+This lab involved several stages of experimentation and understanding JavaScript execution beyond conventional syntax.
+
+I documented my complete investigation in handwritten notes, starting from identifying the injection point and understanding the existing JavaScript URL to exploring arrow functions, exception handling, `throw` statements, and `toString()` execution.
+
+If you want to understand how I approached this lab **from scratch**, including my initial confusion, intermediate experiments, discoveries, payload construction, and the reasoning behind the final solution, you can refer to my handwritten notes:
+
+📓 **[Read my handwritten investigation – Lab 11 XSS](Handwritten-notes/Lab11-XSS.pdf)**
+
+The notes provide the step-by-step thought process behind the solution rather than just the final payload.
+
+## 13. Conclusion
 
 This lab was particularly interesting because the initial injection point was not obvious.
 
