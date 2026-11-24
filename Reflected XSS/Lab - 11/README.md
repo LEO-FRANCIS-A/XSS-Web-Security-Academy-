@@ -334,7 +334,7 @@ This helped identify the restrictions and understand where the original string c
 
 ### Intermediate Attempt
 
-![Intermediate Payload Attempt](med-payload.png)
+![Intermediate Payload Attempt](screenshots/med-payload.png)
 
 The intermediate testing helped establish the following:
 
