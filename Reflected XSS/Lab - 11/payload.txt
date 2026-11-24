@@ -1,0 +1,1 @@
+&'),x=x=>{throw/**/onerror=alert,1337},toString=x,window+'',(x:'
