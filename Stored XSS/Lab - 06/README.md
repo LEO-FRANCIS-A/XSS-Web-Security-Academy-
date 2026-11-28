@@ -1,7 +1,7 @@
 # Lab 06: Exploiting XSS to Bypass CSRF Defenses
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Practitioner-orange?style=flat-square)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Solved-brightgreen?style=flat-square)
 ![Vulnerability](https://img.shields.io/badge/Vulnerability-Stored%20XSS-red?style=flat-square)
 
 ## 1. Lab Overview
